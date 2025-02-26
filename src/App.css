@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,157 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* App Container */
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+/* Header */
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+/* Search Bar */
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    width: 75%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-container button {
+    width: 20%;
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Patient List */
+
+.patient-list {
+    list-style: none;
+    padding: 0;
+}
+
+.patient-item {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.patient-item span {
+    font-size: 16px;
+}
+
+.edit-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.edit-btn:hover {
+    background-color: #218838;
+}
+
+.create-btn {
+    margin-bottom: 10px;
+}
+
+
+/* Form Styles */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+    .search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-container input,
+    .search-container button {
+        width: 100%;
+    }
 }
